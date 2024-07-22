@@ -249,6 +249,7 @@ p[data-width="wide"] {
   }
   .primary-navigation[data-visible] {
     display: block;
+    
   }
   .mobile-nav-toggle {
     display: block;
@@ -785,6 +786,9 @@ iframe {
     justify-content: center;
     z-index: 1;
   }
+  p{
+    padding-top: 1em;
+  }
   .hero-sekcija p {
     display: none;
   }
@@ -798,14 +802,19 @@ iframe {
     height: 40px;
     width: 40px;
   }
-  .main-logo {
-    display: none;
+  .main-logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
   }
   nav {
     z-index: 999;
   }
+  .primary-header {
+    padding: 5px !important;
+  }
 }
-/* navigation */
+
 
 .primary-header {
   padding-top: var(--size-700);
@@ -844,7 +853,6 @@ iframe {
 @media (max-width: 50em) {
   .primary-navigation {
     display: none;
-
     position: fixed;
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
@@ -852,28 +860,22 @@ iframe {
     margin-left: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
-    /* box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05); */
   }
-
   .primary-header[data-overlay]::before {
     content: "";
     position: fixed;
     inset: 0;
-    /* height: 100vh; */
-    /* background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.8)); */
   }
-
   .nav-list {
     display: grid;
     gap: var(--size-600);
     text-align: center;
     font-weight: var(--fw-bold);
+    padding-left: 0;
   }
-
   .primary-navigation[data-visible] {
     display: block;
   }
-
   .mobile-nav-toggle {
     display: block;
     position: fixed;
@@ -889,3 +891,4 @@ iframe {
     display: none;
   }
 }
+
