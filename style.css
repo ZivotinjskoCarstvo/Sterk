@@ -218,6 +218,10 @@ p[data-width="wide"] {
 /* navigation responsivness */
 /* navigation responsivness */
 @media (max-width: 50em) {
+  .primary-header[data-overlay]{
+    position: relative;
+    z-index: 999;
+  }
   .primary-navigation {
     display: none;
 
@@ -225,7 +229,7 @@ p[data-width="wide"] {
     padding: var(--size-700);
     inset: 7rem var(--size-400) auto;
     max-width: 25rem;
-    margin-left: auto;
+    margin-inline: auto;
     background: var(--clr-neutral-100);
     border-radius: var(--size-100);
     box-shadow: 0 0 0.75em rgb(0, 0, 0, 0.05);
@@ -779,6 +783,7 @@ iframe {
     padding: 0;
     text-align: center;
     justify-content: center;
+    z-index: 1;
   }
   .hero-sekcija p {
     display: none;
