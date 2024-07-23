@@ -774,7 +774,7 @@ iframe {
       width: 100%;
     }
 }
-@media (max-width:600px) {
+@media (max-width:995px) {
   h1 {
     text-align: center;
     justify-content: center;

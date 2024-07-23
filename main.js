@@ -9,3 +9,11 @@ navToggle.addEventListener("click", () => {
   primaryNav.toggleAttribute("data-visible");
   primaryHeader.toggleAttribute("data-overlay");
 });
+
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+  if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
